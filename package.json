@@ -1,0 +1,33 @@
+{
+  "name": "ishop-test",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "build:prod": "./node_modules/.bin/webpack -p",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "dev": "./node_modules/.bin/webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happy-Mary/iShop-Test_Shklovskaya.git"
+  },
+  "author": "Maria Shklovskaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happy-Mary/iShop-Test_Shklovskaya/issues"
+  },
+  "homepage": "https://github.com/happy-Mary/iShop-Test_Shklovskaya#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "webpack": "^4.14.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
