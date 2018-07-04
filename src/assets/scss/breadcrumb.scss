@@ -1,0 +1,28 @@
+ul.breadcrumb {
+    padding: 5px 0;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: .9em;
+    color: gray;
+    text-transform: uppercase;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 3px;
+    content: "/\00a0";
+    font-weight: 550;
+    font-size: 1em;
+}
+
+ul.breadcrumb li a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}

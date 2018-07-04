@@ -1,0 +1,30 @@
+@import '_var';
+@import "normalize";
+@import "breadcrumb";
+@import "header_container";
+
+body {
+  background: $bgcolor;
+  font-size: 16px;
+}
+
+// main_container.scss file
+main {
+    margin-top: 140px;
+    height: 300px;
+    .main-wrapper {
+        @extend %container-wrapper;
+    }
+}
+
+// media file
+@media (max-width: 1240px) {
+    header .header-container {
+        width: 100%;
+        .main-menu {
+            width: 100%;
+            display: none;
+        }
+    }
+    
+}

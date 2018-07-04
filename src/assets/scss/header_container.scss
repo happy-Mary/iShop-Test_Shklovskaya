@@ -1,0 +1,80 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 30px -15px $gray;
+    .banner-container {
+        height: 40px;
+        p {
+            color: red;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0;
+            line-height: 40px;
+        }   
+    }
+    .header-wrapper {
+        height: 90px;
+        background: #fff;
+    }
+    .header-container {
+        @extend %container-wrapper;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        .logo{
+            height: 100%;
+            width: 10%;
+            a {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                background: url('../media/logo.jpg') no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .main-menu {
+            height: inherit;
+            display: flex;
+            a, a:active, a:hover, a:visited {
+                display: block;
+                color: #000;
+                height: inherit;
+                padding: 0 10px;
+                line-height: 90px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: .8em;
+                cursor: pointer;
+                &.active {
+                    color: red;
+                }
+            }
+            
+        }
+
+        .submenu-links {
+            margin: 0;
+            height: 50px;
+            li {
+                height: 100%;
+                width: 50px;
+                display: inline-block;
+                list-style-type: none;
+                color: gray;
+                line-height: 50px;
+                text-align: center;
+                font-size: 1.5em;
+                a, a:active, a:hover, a:visited  {
+                    display: block;
+                    color: gray;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
