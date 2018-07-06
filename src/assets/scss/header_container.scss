@@ -6,6 +6,7 @@ header {
     box-shadow: 0 10px 30px -15px $gray;
     .banner-container {
         height: 40px;
+        background: $bgcolor;
         p {
             color: red;
             text-align: center;
