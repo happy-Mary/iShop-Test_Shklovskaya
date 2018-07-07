@@ -1,3 +1,5 @@
+@import '_var';
+
 header {
     position: fixed;
     top: 0;
@@ -8,7 +10,7 @@ header {
         height: 40px;
         background: $bgcolor;
         p {
-            color: red;
+            color: $redText;
             text-align: center;
             font-size: 0.9em;
             margin: 0;
@@ -52,7 +54,7 @@ header {
                 font-size: .8em;
                 cursor: pointer;
                 &.active {
-                    color: red;
+                    color: $redText;
                 }
             }
             

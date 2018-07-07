@@ -13,10 +13,14 @@ fontawesome.library.add(faFreeSolid);
   getProducts();
 
   // make view
-  function setProducts(response) {
+  function createView(response) {
+    // response.forEach((product) => {
+    //   product.images.forEach((photo, i) => {
+    //     product.images[i] = generateImagePath(photo);
+    //   });
+    // });
     products = response;
-    var str = currentProduct.init(products[0]); 
-    console.log(str);
+    currentProduct.init(products[0], ".main-content");
   }
 
   // functions
@@ -25,17 +29,14 @@ fontawesome.library.add(faFreeSolid);
     const URL = 'https://api.myjson.com/bins/khta6';
     return makeAjaxCall(URL, "GET")
     .then((data) => {
-      setProducts(data);
+      createView(data);
     });
   }
 
-
   // helper service
-  const serviceFunc = {
-    generateImagePath: function(imgName) {
+    function generateImagePath(imgName) {
       return require(`./assets/media/${imgName}`)
     }
-  }
 
   // imagePreview component
   // convert all images before sending

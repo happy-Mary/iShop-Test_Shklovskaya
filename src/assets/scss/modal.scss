@@ -1,0 +1,41 @@
+@import '_var';
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  .modal {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    padding: 20px;
+    // width: 50%;
+    max-height: 80vh;
+    // overflow-y: scroll;
+    background: $modalBackground;
+    .modal-body {
+      width: 90%;
+      margin: auto;
+    }
+    .modal-title {
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .close {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

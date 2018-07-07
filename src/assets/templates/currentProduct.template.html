@@ -1,0 +1,75 @@
+<div class='product-container'>
+    <section class="product-preview">
+        <!-- set image module here -->
+    </section>
+    <section class="product-wrapper">
+        <!-- product description -->
+        <div class="product-description">
+            <h3></h3>
+            <p class='price'><span>&#8364;</span></p>
+            <p class='description'></p>
+        </div>
+        <form class="product-order" method="post">
+            <label for="quan">qty</label>
+            <input type="text" id='quan' name='quantity' maxlength="4">
+            <button class='submit green-button' type="submit">add to cart<span><i class="fa fa-chevron-right"></i></span></button>
+            <button class='edit-order gray-button'><span><i class="fa fa-pencil-alt"></i></span>personalizza</button>
+        </form>
+        <div class="product-details">
+            <!-- expand component -->
+        </div>
+        <ul class="social-links">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>   
+    </section>
+    <div class="modal-wrapper"></div>
+    <div class="modal-content">
+        <div class="image">
+            <!-- <img alt='img'/> -->
+        </div>
+        <form action="" class="edit-form">
+            <div class='inscription-container'>
+                <label for="inscription">inserisci il testo</label><br/>
+                <span>Max 20 caratteri</span><br/>
+                <input type="text" id='inscription' value='' maxlength='20'>
+                <p class="count-symbols">
+                    <span class="curent-count">0</span>/
+                    <span class="max-count">20</span>
+                </p>
+                <input type="text" disabled>
+            </div>
+            <label>scegli il colore</label><br/>
+            <div class="color-container">
+                <input id='red' type="radio" name='color' value='red'>
+                <label for='red'>
+                    <span class="color"></span><span class="color-text">Red</span>
+                </label>
+                <input id='blue' type="radio" name='color' value='blue'>
+                <label for='blue'>
+                    <span class="color"></span><span class="color-text">Blue</span></label>
+                <input id='orange' type="radio" name='color' value='orange'>
+                <label for='orange'>
+                    <span class="color"></span><span class="color-text">Orange</span></label>
+                <input id='gray' type="radio" name='color' value='gray'>
+                <label for='gray'>
+                    <span class="color"></span><span class="color-text">Gray</span></label>
+                <input id='black' type="radio" name='color' value='black'>
+                <label for='black'>
+                    <span class="color"></span><span class="color-text">Black</span></label>
+            </div>
+            <div class="font-container">
+                    <input id='sans' type="radio" name='font' value='sans'>
+                    <label for='sans'>
+                        <span class="font"></span><span class="font-text">Red</span>
+                    </label>
+                    <input id='serif' type="radio" name='font' value='serif'>
+                    <label for='serif'>
+                        <span class="font"></span><span class="font-text">Blue</span>
+                    </label>
+            </div>
+            <button class='save-product green-button'>conferma a acciunci al callero</button>
+        </form>
+    </div> 
+</div>
